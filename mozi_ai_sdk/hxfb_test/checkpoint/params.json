@@ -1,0 +1,63 @@
+{
+  "batch_mode": "truncate_episodes",
+  "clip_param": 0.3,
+  "entropy_coeff": 0.0,
+  "env": "<class 'hxfb_test.envs.env_hxfb.HXFBEnv'>",
+  "env_config": {
+    "action_dim": 48,
+    "avail_docker_ip_port": [
+      "8.140.121.210:40705",
+      "8.140.121.210:38781",
+      "8.140.121.210:39379",
+      "8.140.121.210:32788",
+      "8.140.121.210:59106",
+      "8.140.121.210:37345",
+      "8.140.121.210:33417",
+      "8.140.121.210:57432",
+      "8.140.121.210:52091",
+      "8.140.121.210:40985",
+      "8.140.121.210:35465"
+    ],
+    "enemy_side_name": "\u84dd\u65b9",
+    "mode": "development",
+    "obs_dim": 23,
+    "schedule_addr": "123.57.137.210",
+    "schedule_port": 7020,
+    "sever_docker_dict": {
+      "8.140.121.210": 11
+    },
+    "side_name": "\u7ea2\u65b9",
+    "training_id": "test_multi_trials"
+  },
+  "framework": "torch",
+  "kl_coeff": 0.2,
+  "lambda": 0.98,
+  "log_level": "DEBUG",
+  "lr": 2.975973334094459e-05,
+  "model": {
+    "lstm_cell_size": 256,
+    "lstm_use_prev_action_reward": true,
+    "max_seq_len": 64,
+    "use_lstm": true
+  },
+  "multiagent": {
+    "agent_0": [
+      "Dict(obs:Box(-inf, inf, (23,), float32))",
+      "Discrete(48)",
+      {
+        "gamma": 0.99
+      }
+    ]
+  },
+  "num_envs_per_worker": 1,
+  "num_gpus": 0,
+  "num_gpus_per_worker": 0,
+  "num_sgd_iter": 100,
+  "num_workers": 10,
+  "rollout_fragment_length": 512,
+  "sgd_minibatch_size": 128,
+  "train_batch_size": -1,
+  "vf_clip_param": 10,
+  "vf_loss_coeff": 1.0,
+  "vf_share_layers": true
+}

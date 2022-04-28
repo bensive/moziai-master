@@ -1,0 +1,5 @@
+sc_code/utils/qmix_policy.py替换ray/rllib/agents/qmix/qmix_policy.py
+
+sc_code/utils/model.py替换ray/rllib/agents/qmix/model.py
+
+sc_code/utils/autoregressive_action_model.py替换ray/rllib/examples/models/autoregressive_action_model.py

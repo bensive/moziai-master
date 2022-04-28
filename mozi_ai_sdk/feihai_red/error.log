@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:/202203mzwork/moziai-master/mozi_ai_sdk/feihai_red/main_versus.py", line 76, in <module>
+    main()
+  File "D:/202203mzwork/moziai-master/mozi_ai_sdk/feihai_red/main_versus.py", line 54, in main
+    env.scenario = env.reset()
+  File "D:\202203mzwork\moziai-master\mozi_ai_sdk\base_env.py", line 82, in reset
+    self.mozi_server.init_situation(self.scenario, self.app_mode)
+  File "D:\202203mzwork\moziai-master\mozi_simu_sdk\mozi_server.py", line 441, in init_situation
+    b_init_success = scenario.situation.init_situation(self, scenario, app_mode)
+AttributeError: 'NoneType' object has no attribute 'situation'
